@@ -1,5 +1,14 @@
 <resources>
     <string name="app_name">MouseAndroid</string>
     <!-- TODO: Remove or change this placeholder text -->
+    <string name="homepage_btn">首页</string>
+    <string name="ground_btn">广场</string>
+    <string name="message_btn">消息</string>
+    <string name="personal_btn">个人</string>
+    <string name="hello_homepage_fragment">Hello homepage fragment</string>
+    <string name="hello_ground_fragment">Hello ground fragment</string>
+    <string name="hello_message_fragment">Hello message fragment</string>
+    <string name="hello_personal_fragment">Hello personal fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

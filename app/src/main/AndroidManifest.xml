@@ -15,6 +15,12 @@
         android:theme="@style/Theme.MouseAndroid"
         tools:targetApi="n">
         <activity
+            android:name=".Ground"
+            android:exported="false" />
+        <activity
+            android:name=".Homepage"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

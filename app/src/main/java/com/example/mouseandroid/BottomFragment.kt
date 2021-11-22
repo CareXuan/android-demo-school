@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_bottom.*
 import retrofit2.Call
 import retrofit2.Callback
@@ -23,18 +24,25 @@ class BottomFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         btnHomepage.setOnClickListener {
-            val appService = ServiceCreator.create(AppService::class.java)
-            appService.getAppData().enqueue(object : Callback<ResponseArray<User>> {
-                override fun onResponse(call: Call<ResponseArray<User>>, response: Response<ResponseArray<User>>) {
-                    val list = response.body()
-                    Log.d("success",list!!.msg)
-                }
-
-                override fun onFailure(call: Call<ResponseArray<User>>, t: Throwable) {
-                    Log.d("fail",t.message.toString())
-                    t.printStackTrace()
-                }
-            })
+            transFragmentMain(HomepageFragment())
         }
+        btnGround.setOnClickListener {
+            transFragmentMain(GroundFragment())
+        }
+        btnMsg.setOnClickListener {
+            transFragmentMain(MessageFragment())
+        }
+        btnPersonal.setOnClickListener {
+            transFragmentMain(PersonalFragment())
+        }
+        transFragmentMain(HomepageFragment())
+    }
+
+    fun transFragmentMain(fragment:Fragment){
+        val activity = activity
+        val fragmentManager = activity?.supportFragmentManager
+        val transaction = fragmentManager?.beginTransaction()
+        transaction?.replace(R.id.mainFragment, fragment)
+        transaction?.commit()
     }
 }
