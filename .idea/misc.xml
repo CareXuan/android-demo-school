@@ -6,6 +6,8 @@
         <entry key="app/src/main/res/layout/activity_ground.xml" value="0.22554347826086957" />
         <entry key="app/src/main/res/layout/activity_homepage.xml" value="0.22554347826086957" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1721014492753623" />
+        <entry key="app/src/main/res/layout/common_good_item.xml" value="0.1421875" />
+        <entry key="app/src/main/res/layout/common_good_list.xml" value="0.1421875" />
         <entry key="app/src/main/res/layout/fragment_bottom.xml" value="0.1721014492753623" />
         <entry key="app/src/main/res/layout/fragment_ground.xml" value="0.22554347826086957" />
         <entry key="app/src/main/res/layout/fragment_homepage.xml" value="0.22554347826086957" />

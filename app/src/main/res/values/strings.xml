@@ -9,6 +9,11 @@
     <string name="hello_ground_fragment">Hello ground fragment</string>
     <string name="hello_message_fragment">Hello message fragment</string>
     <string name="hello_personal_fragment">Hello personal fragment</string>
+    <string name="search_edit_btn">搜索</string>
+    <string name="selling_good_btn">正在上架的</string>
+    <string name="sell_good_btn">已卖出的</string>
+    <string name="lookover_good_btn">浏览记录</string>
+    <string name="collect_good_btn">收藏</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
